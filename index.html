@@ -43,200 +43,251 @@
             <a class="listItem" href="./button.html">Buttons</a>
         </div>
         <div class="main">
+
+
+            <!-- Badge component -->
+
+
             <div class="contents">
-                <h1 style="color:red">MOve alert, badges to top and delete this h1</h1>
-
-                <h1>Avatars</h1>
+                <h1>Badges</h1>
                 <p class="tagline">
-                    Avatars are found throughout different designs and can be used just
-                    about anywhere, from tables to dialog menus, from user info to
-                    status menu and so much more!
+                    Badge generates a small badge to the top-right of its child(ren).
+                    Use the Badge Component Symbol to draw attention to another interface element or to display a
+                    notification.
                 </p>
-                <div class="item-container">
-                    <h3>Image Avatars</h3>
-                    <p class="tagline">
-                        Image avatars can be very useful in displaying user information, a
-                        list of friends etc. Since they're in such wide use already,
-                        finding them isn't that difficult a task.
-                    </p>
-                    <div class="items">
-                        <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-regular" />
-                        <img class="avatar-rg" src="./assets/avatar-2.svg" alt="avatar-logo-regular" />
-                        <img class="avatar-rg" src="./assets/avatar-3.svg" alt="avatar-logo-regular" />
-                    </div>
+                <p class="tagline">
 
+                    It enhances the component to which it is attached with additional information, disclosed to the user
+                    upon interacting with it.
+                </p>
+
+                <div class="item-container">
+
+                    <div class="badge-items">
+                        <span class="badge-parent"><img class="badge-img" src="./assets/shopping-cart.png" alt=""><span
+                                class="num">19</span></span>
+                        <span class="badge-parent"><img class="badge-img" src="./assets/envelope.png" alt=""><span
+                                class="num">9</span></span>
+                        <span class="badge-parent"><span class="txt-badge-primary">Primary</span></span>
+                        <span class="badge-parent"><span class="txt-badge-secondary">Secondary</span></span>
+
+                    </div>
                     <pre> <code class="html">
-      &lt!-- HTML code: -->
-      
-      &ltdiv class="items">
-          &ltimg
-              class="avatar-rg"
-              src="./assets/avatarLogo.svg"
-              alt="avatar-logo-small"
-          />
-          &ltimg
-              class="avatar-rg"
-              src="./assets/avatar-2.svg"
-              alt="avatar-logo-small"
-          />
-          &ltimg
-              class="avatar-rg"
-              src="./assets/avatar-3.svg"
-              alt="avatar-logo-small"
-          />
-          &lt/div>
-      </code></pre>
+&lt!-- HTML code: -->
+
+&ltdiv class="contents">
+
+&ltdiv class="item-container">
+
+&ltdiv class="badge-items">
+
+&ltspan class="badge-parent">
+
+&ltimg class="badge-img" src="./assets/shopping-cart.png" alt="">
+&ltspan class="num">19&lt/span>&lt/span>
+
+&ltspan class="badge-parent">
+&ltimg class="badge-img" src="./assets/envelope.png" alt="">
+&ltspan class="num">9&lt/span>&lt/span>
+
+&ltspan class="badge-parent">
+&ltspan class="txt-badge-primary">Primary&lt/span>&lt/span>
+
+&ltspan class="badge-parent">&ltspan class="txt-badge-secondary">Secondary&lt/span>&lt/span>
+
+&lt/div>
+&lt/div>
+&lt/div>
+
+</code></pre>
                     <pre> <code class="css">
-      /* CSS code: */
-      
-      .items {
-      padding: 0rem 0rem;
-      display: flex;
-      /* justify-content: space-around; */
-      }
-      .avatar-rg {
-      width: 3rem;
-      height: 3rem;
-      padding: 0rem 1rem;
-      }
-      
-      </code></pre>
+/* CSS code: */
+
+
+.badge-items{
+display: flex;
+justify-content: space-around;
+
+border: 1px solid var(--line-color);
+padding: 1.6rem;
+}
+.badge-img{
+height: 2rem;
+width: 2rem;
+/* margin: 1rem ; */
+}
+.badge-parent{
+position: relative;
+/* background-color: red; */
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 3rem;
+height: 3rem;
+}
+.num{
+background-color: var(--fab-color-two);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--white);
+position: absolute;
+width: 1.6rem;
+height: 1.6rem;
+top: 0rem;
+right: 0rem;
+border-radius: 50px;
+}
+.txt-badge-primary{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: darkcyan;
+margin: 0.5rem 0rem;
+padding: 0.1rem 0.6rem;
+border-radius: 20px;
+color: var(--white);
+}
+.txt-badge-secondary{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(112, 119, 119);
+margin: 0.5rem 0rem;
+padding: 0.1rem 0.6rem;
+border-radius: 10px;
+color: var(--white);
+}
+
+           
+</code></pre>
                     <hr>
                 </div>
+                <!-- testing -->
+
+                <!-- testn -->
+
+                <!-- <footer></footer> -->
+            </div>
+
+            <!-- Alert component -->
+
+            <div class="contents">
+                <h1>Alert</h1>
+                <p class="tagline">
+                    An alert displays a short, important message in a way that attracts the user's attention without
+                    interrupting the user's task.
+                </p>
+
                 <div class="item-container">
-                    <h3>Avatar sizes</h3>
-                    <p class="tagline">
-                        Depending on the need or the design brief given, one may require
-                        avatars to be of a variety of sizes. Following are avatars in
-                        small, regular and large sizes respectively:
-                    </p>
-                    <div class="items">
-                        <img class="avatar-sm" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-                        <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-log-regular" />
-                        <img class="avatar-lg" src="./assets/avatarLogo.svg" alt="avatar-logo-large" />
+
+
+                    <div class="alert-items">
+                        <span class="alert-individual-error"><img class="alert-img" src="./assets/alert-error.png"
+                                alt=""> This is an error alert - check it out!</span>
+                        <span class="alert-individual-warning"><img class="alert-img" src="./assets/alert-warning.png"
+                                alt=""> This is a warning alert - check it out!</span>
+                        <span class="alert-individual-info"><img class="alert-img" src="./assets/alert-info.png" alt="">
+                            This is an info alert - check it out!</span>
+                        <span class="alert-individual-success"><img class="alert-img" src="./assets/alert-success.png"
+                                alt=""> This is a success alert - check it out!</span>
+
                     </div>
                     <pre> <code class="html">
-      &lt!-- HTML code: -->
-      
-      &ltdiv class="items">
-      
-          &ltimg class="avatar-sm" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-      
-          &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-log-regular" />
-          
-          &ltimg class="avatar-lg" src="./assets/avatarLogo.svg" alt="avatar-logo-large" />
-      
-      &lt/div>
-      </code></pre>
-                    <pre> <code class="css">
-          /* CSS code: */
-          
-          .items {
-          padding: 0rem 0rem;
-          display: flex;
-          /* justify-content: space-around; */
-          
-          .avatar-rg {
-              width: 3rem;
-              height: 3rem;
-              padding: 0rem 1rem;
-          }
-          
-          .avatar-sm {
-              width: 2rem;
-              height: 2rem;
-          
-              padding: 0rem 1rem;
-          }
-          
-          .avatar-lg {
-              width: 4rem;
-              height: 4rem;
-          
-              padding: 0rem 1rem;
-          }
-                              
-         </code></pre>
-                    <hr>
+&lt!-- HTML code: -->
 
-                </div>
-                <div class="item-container">
-                    <h3>Avatar status</h3>
-                    <p class="tagline">
-                        Avatars with status badges can be used to denote a variety of
-                        things from busy to available, from offline to favourite etc can
-                        all be done using status badges. Following are some examples:
-                    </p>
-                    <div class="items">
-                        <div class="status">
-                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-                            <img class="status-dot" src="./assets/red-dot.png" alt="" />
-                        </div>
-                        <div class="status">
-                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-                            <img class="status-dot" src="./assets/green-dot.png" alt="" />
-                        </div>
-                        <div class="status">
-                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-                            <img class="status-dot" src="./assets/orange-circle-96.png" alt="" />
-                        </div>
-                    </div>
-                    <pre> <code class="html">
-      &lt!-- HTML code: -->
-      
-      &ltdiv class="items">
-      
-      &ltdiv class="status">
-      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-      &ltimg class="status-dot" src="./assets/red-dot.png" alt="" />
-      &lt/div>
-      
-      &ltdiv class="status">
-      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-      &ltimg class="status-dot" src="./assets/green-dot.png" alt="" />
-      &lt/div>
-      
-      &ltdiv class="status">
-      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
-      &ltimg class="status-dot" src="./assets/orange-circle-96.png" alt="" />
-      &lt/div>
-      
-      &lt/div>
-      </code></pre>
-                    <pre> <code class="css">
-          /* CSS code: */
-          
-          .items {
-          padding: 0rem 0rem;
-          display: flex;
-          /* justify-content: space-around; */
-          
-          .status {
-              position: relative;
-          }
-          
-          .status-dot {
-              height: 1rem;
-              width: 1rem;
-              position: absolute;
-              bottom: 0.3rem;
-              right: 1rem;
-              border-radius: 50%;
-              border: 3px solid white;
-          }
-          .avatar-rg {
-              width: 3rem;
-              height: 3rem;
-              padding: 0rem 1rem;
-          }
-                              
-                
- </code></pre>
-                    <hr>
+&ltdiv class="alert-items">
 
+        &ltspan class="alert-individual-error">&ltimg class="alert-img" 
+                src="./assets/alert-error.png" 
+                alt="error icon"> 
+                This is an error alert - check it out!
+        &lt/span>
+        
+        &ltspan class="alert-individual-warning">&ltimg class="alert-img"
+                src="./assets/alert-warning.png" 
+                alt="warning icon"> 
+                This is an warning alert - check it out!
+        &lt/span>
+
+        &ltspan class="alert-individual-info">&ltimg class="alert-img" 
+                src="./assets/alert-info.png"
+                alt="info icon"> 
+                This is an warning alert - check it out!
+        &lt/span>
+
+        &ltspan class="alert-individual-success">&ltimg class="alert-img" 
+                src="./assets/alert-success.png"
+                alt="success icon"> 
+                This is an success alert - check it out!
+        &lt/span>
+
+&lt/div>
+</code></pre>
+                    <pre> <code class="css">
+/* CSS code: */
+
+    .alert-items{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .alert-individual-error{
+        background-color: var(--alert-error-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-error);
+    }
+    .alert-img{
+        height: 1rem;
+        width: 1rem;
+        margin: 1rem ;
+    }
+    .alert-individual-warning{
+        background-color: var(--alert-warning-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-warning);
+    }
+    .alert-individual-info{
+        background-color: var(--alert-info-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-info);
+    }
+    .alert-individual-success{
+        background-color: var(--alert-success-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-success);
+    }
+               
+</code></pre>
+                    <hr>
                 </div>
 
             </div>
+
+
+
+            <!-- Button component -->
+
             <div class="contents">
                 <h1>Buttons</h1>
                 <p class="tagline">
@@ -471,6 +522,11 @@
                 <hr>
 
             </div>
+
+
+            <!-- Floating Action Button component -->
+
+
             <div class="contents">
                 <h1>Floating Action Button (FAB)</h1>
                 <p class="tagline">
@@ -669,249 +725,211 @@
                 <!-- <footer></footer> -->
             </div>
 
-            <!-- Alert component -->
 
+            <!-- Avatar Component -->
             <div class="contents">
-                <h1>Alert</h1>
+                <!-- <h1 style="color:red">MOve alert, badges to top and delete this h1</h1>
+
+                <h1>Avatars</h1>
                 <p class="tagline">
-                    An alert displays a short, important message in a way that attracts the user's attention without
-                    interrupting the user's task.
-                </p>
-
+                    Avatars are found throughout different designs and can be used just
+                    about anywhere, from tables to dialog menus, from user info to
+                    status menu and so much more!
+                </p> -->
                 <div class="item-container">
-
-
-                    <div class="alert-items">
-                        <span class="alert-individual-error"><img class="alert-img" src="./assets/alert-error.png"
-                                alt=""> This is an error alert - check it out!</span>
-                        <span class="alert-individual-warning"><img class="alert-img" src="./assets/alert-warning.png"
-                                alt=""> This is a warning alert - check it out!</span>
-                        <span class="alert-individual-info"><img class="alert-img" src="./assets/alert-info.png" alt="">
-                            This is an info alert - check it out!</span>
-                        <span class="alert-individual-success"><img class="alert-img" src="./assets/alert-success.png"
-                                alt=""> This is a success alert - check it out!</span>
-
+                    <h3>Image Avatars</h3>
+                    <p class="tagline">
+                        Image avatars can be very useful in displaying user information, a
+                        list of friends etc. Since they're in such wide use already,
+                        finding them isn't that difficult a task.
+                    </p>
+                    <div class="items">
+                        <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-regular" />
+                        <img class="avatar-rg" src="./assets/avatar-2.svg" alt="avatar-logo-regular" />
+                        <img class="avatar-rg" src="./assets/avatar-3.svg" alt="avatar-logo-regular" />
                     </div>
+
                     <pre> <code class="html">
-&lt!-- HTML code: -->
-
-&ltdiv class="alert-items">
-
-        &ltspan class="alert-individual-error">&ltimg class="alert-img" 
-                src="./assets/alert-error.png" 
-                alt="error icon"> 
-                This is an error alert - check it out!
-        &lt/span>
-        
-        &ltspan class="alert-individual-warning">&ltimg class="alert-img"
-                src="./assets/alert-warning.png" 
-                alt="warning icon"> 
-                This is an warning alert - check it out!
-        &lt/span>
-
-        &ltspan class="alert-individual-info">&ltimg class="alert-img" 
-                src="./assets/alert-info.png"
-                alt="info icon"> 
-                This is an warning alert - check it out!
-        &lt/span>
-
-        &ltspan class="alert-individual-success">&ltimg class="alert-img" 
-                src="./assets/alert-success.png"
-                alt="success icon"> 
-                This is an success alert - check it out!
-        &lt/span>
-
-&lt/div>
-</code></pre>
+      &lt!-- HTML code: -->
+      
+      &ltdiv class="items">
+          &ltimg
+              class="avatar-rg"
+              src="./assets/avatarLogo.svg"
+              alt="avatar-logo-small"
+          />
+          &ltimg
+              class="avatar-rg"
+              src="./assets/avatar-2.svg"
+              alt="avatar-logo-small"
+          />
+          &ltimg
+              class="avatar-rg"
+              src="./assets/avatar-3.svg"
+              alt="avatar-logo-small"
+          />
+          &lt/div>
+      </code></pre>
                     <pre> <code class="css">
-/* CSS code: */
-
-    .alert-items{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .alert-individual-error{
-        background-color: var(--alert-error-fill);
-        margin: 0.6rem 0rem;
-        width: 80%;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        color: var(--alert-error);
-    }
-    .alert-img{
-        height: 1rem;
-        width: 1rem;
-        margin: 1rem ;
-    }
-    .alert-individual-warning{
-        background-color: var(--alert-warning-fill);
-        margin: 0.6rem 0rem;
-        width: 80%;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        color: var(--alert-warning);
-    }
-    .alert-individual-info{
-        background-color: var(--alert-info-fill);
-        margin: 0.6rem 0rem;
-        width: 80%;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        color: var(--alert-info);
-    }
-    .alert-individual-success{
-        background-color: var(--alert-success-fill);
-        margin: 0.6rem 0rem;
-        width: 80%;
-        height: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        color: var(--alert-success);
-    }
-               
-</code></pre>
+      /* CSS code: */
+      
+      .items {
+      padding: 0rem 0rem;
+      display: flex;
+      /* justify-content: space-around; */
+      }
+      .avatar-rg {
+      width: 3rem;
+      height: 3rem;
+      padding: 0rem 1rem;
+      }
+      
+      </code></pre>
                     <hr>
                 </div>
-                <!-- testing -->
+                <div class="item-container">
+                    <h3>Avatar sizes</h3>
+                    <p class="tagline">
+                        Depending on the need or the design brief given, one may require
+                        avatars to be of a variety of sizes. Following are avatars in
+                        small, regular and large sizes respectively:
+                    </p>
+                    <div class="items">
+                        <img class="avatar-sm" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                        <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-log-regular" />
+                        <img class="avatar-lg" src="./assets/avatarLogo.svg" alt="avatar-logo-large" />
+                    </div>
+                    <pre> <code class="html">
+      &lt!-- HTML code: -->
+      
+      &ltdiv class="items">
+      
+          &ltimg class="avatar-sm" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      
+          &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-log-regular" />
+          
+          &ltimg class="avatar-lg" src="./assets/avatarLogo.svg" alt="avatar-logo-large" />
+      
+      &lt/div>
+      </code></pre>
+                    <pre> <code class="css">
+          /* CSS code: */
+          
+          .items {
+          padding: 0rem 0rem;
+          display: flex;
+          /* justify-content: space-around; */
+          
+          .avatar-rg {
+              width: 3rem;
+              height: 3rem;
+              padding: 0rem 1rem;
+          }
+          
+          .avatar-sm {
+              width: 2rem;
+              height: 2rem;
+          
+              padding: 0rem 1rem;
+          }
+          
+          .avatar-lg {
+              width: 4rem;
+              height: 4rem;
+          
+              padding: 0rem 1rem;
+          }
+                              
+         </code></pre>
+                    <hr>
 
-                <!-- testn -->
+                </div>
+                <div class="item-container">
+                    <h3>Avatar status</h3>
+                    <p class="tagline">
+                        Avatars with status badges can be used to denote a variety of
+                        things from busy to available, from offline to favourite etc can
+                        all be done using status badges. Following are some examples:
+                    </p>
+                    <div class="items">
+                        <div class="status">
+                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                            <img class="status-dot" src="./assets/red-dot.png" alt="" />
+                        </div>
+                        <div class="status">
+                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                            <img class="status-dot" src="./assets/green-dot.png" alt="" />
+                        </div>
+                        <div class="status">
+                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                            <img class="status-dot" src="./assets/orange-circle-96.png" alt="" />
+                        </div>
+                    </div>
+                    <pre> <code class="html">
+      &lt!-- HTML code: -->
+      
+      &ltdiv class="items">
+      
+      &ltdiv class="status">
+      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      &ltimg class="status-dot" src="./assets/red-dot.png" alt="" />
+      &lt/div>
+      
+      &ltdiv class="status">
+      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      &ltimg class="status-dot" src="./assets/green-dot.png" alt="" />
+      &lt/div>
+      
+      &ltdiv class="status">
+      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      &ltimg class="status-dot" src="./assets/orange-circle-96.png" alt="" />
+      &lt/div>
+      
+      &lt/div>
+      </code></pre>
+                    <pre> <code class="css">
+          /* CSS code: */
+          
+          .items {
+          padding: 0rem 0rem;
+          display: flex;
+          /* justify-content: space-around; */
+          
+          .status {
+              position: relative;
+          }
+          
+          .status-dot {
+              height: 1rem;
+              width: 1rem;
+              position: absolute;
+              bottom: 0.3rem;
+              right: 1rem;
+              border-radius: 50%;
+              border: 3px solid white;
+          }
+          .avatar-rg {
+              width: 3rem;
+              height: 3rem;
+              padding: 0rem 1rem;
+          }
+                              
+                
+ </code></pre>
+                    <hr>
 
-                <!-- <footer></footer> -->
+                </div>
+
             </div>
 
 
-            <!-- Badge component -->
 
 
-            <div class="contents">
-                <h1>Badges</h1>
-                <p class="tagline">
-                    Badge generates a small badge to the top-right of its child(ren).
-                    Use the Badge Component Symbol to draw attention to another interface element or to display a
-                    notification.
-                </p>
-                <p class="tagline">
 
-                    It enhances the component to which it is attached with additional information, disclosed to the user
-                    upon interacting with it.
-                </p>
 
-                <div class="item-container">
 
-                    <div class="badge-items">
-                        <span class="badge-parent"><img class="badge-img" src="./assets/shopping-cart.png" alt=""><span
-                                class="num">19</span></span>
-                        <span class="badge-parent"><img class="badge-img" src="./assets/envelope.png" alt=""><span
-                                class="num">9</span></span>
-                        <span class="badge-parent"><span class="txt-badge-primary">Primary</span></span>
-                        <span class="badge-parent"><span class="txt-badge-secondary">Secondary</span></span>
 
-                    </div>
-                    <pre> <code class="html">
-        &lt!-- HTML code: -->
-        
-    &ltdiv class="contents">
 
-    &ltdiv class="item-container">
-
-    &ltdiv class="badge-items">
-    
-    &ltspan class="badge-parent">
-
-        &ltimg class="badge-img" src="./assets/shopping-cart.png" alt="">
-        &ltspan class="num">19&lt/span>&lt/span>
-
-    &ltspan class="badge-parent">
-        &ltimg class="badge-img" src="./assets/envelope.png" alt="">
-        &ltspan class="num">9&lt/span>&lt/span>
-
-    &ltspan class="badge-parent">
-        &ltspan class="txt-badge-primary">Primary&lt/span>&lt/span>
-
-    &ltspan class="badge-parent">&ltspan class="txt-badge-secondary">Secondary&lt/span>&lt/span>
-
-            &lt/div>
-        &lt/div>
-    &lt/div>
-       
-        </code></pre>
-                    <pre> <code class="css">
-        /* CSS code: */
-        
-
-.badge-items{
-    display: flex;
-    justify-content: space-around;
-
-    border: 1px solid var(--line-color);
-    padding: 1.6rem;
-}
-.badge-img{
-    height: 2rem;
-    width: 2rem;
-    /* margin: 1rem ; */
-}
-.badge-parent{
-    position: relative;
-    /* background-color: red; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-}
-.num{
-    background-color: var(--fab-color-two);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    position: absolute;
-    width: 1.6rem;
-    height: 1.6rem;
-    top: 0rem;
-    right: 0rem;
-    border-radius: 50px;
-}
-.txt-badge-primary{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: darkcyan;
-    margin: 0.5rem 0rem;
-    padding: 0.1rem 0.6rem;
-    border-radius: 20px;
-    color: var(--white);
-}
-.txt-badge-secondary{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(112, 119, 119);
-    margin: 0.5rem 0rem;
-    padding: 0.1rem 0.6rem;
-    border-radius: 10px;
-    color: var(--white);
-}
-           
-                       
-        </code></pre>
-                    <hr>
-                </div>
-                <!-- testing -->
-
-                <!-- testn -->
-
-                <!-- <footer></footer> -->
-            </div>
 
 
             <!-- Card Component -->
@@ -1101,25 +1119,26 @@
                 </div>
 
 
-                    <div class="item-container">
-                        <h3>Product Info Card</h3>
+                <div class="item-container">
+                    <h3>Product Info Card</h3>
 
-                        <div class="img-card">
-                            <img class="card-img" src="./assets/prod-1.jpeg" alt="">
-                            <p class="card-txt">
-                                <h2 class="img-card-heading">Bomber Jacket</h2>choco coloured bomber jacket
-                            </p>
-                            <h2 class="item-price">₹2345 /- <span class="fake-discount">₹4567 </span><span
-                                    class="fake-discount-percent">(48% OFF)</span></h2>
+                    <div class="img-card">
+                        <img class="card-img" src="./assets/prod-1.jpeg" alt="">
+                        <p class="card-txt">
+                            <h2 class="img-card-heading">Bomber Jacket</h2>choco coloured bomber jacket
+                        </p>
+                        <h2 class="item-price">₹2345 /- <span class="fake-discount">₹4567 </span><span
+                                class="fake-discount-percent">(48% OFF)</span></h2>
 
-                            <span class="tax-info">Inclusive of all taxes.</span>
-                            <div class="btn-container">
-                            <button class="buy-btn-sec"> <img class="icon" src="./assets/icons8-shopping-cart-100.png" alt="">Add to bag</button>
+                        <span class="tax-info">Inclusive of all taxes.</span>
+                        <div class="btn-container">
+                            <button class="buy-btn-sec"> <img class="icon" src="./assets/icons8-shopping-cart-100.png"
+                                    alt="">Add to bag</button>
                             <button class="buy-btn">Wishlist</button>
                         </div>
-                        </div>
+                    </div>
 
-                        <pre> <code class="html">
+                    <pre> <code class="html">
 &lt!-- HTML code: -->
                             
     &ltdiv class="item-container">
@@ -1148,13 +1167,13 @@
                            
                            
                             </code></pre>
-                            
-                                            <hr>
 
-                    </div>
+                    <hr>
+
+                </div>
 
 
-                    <!-- outside containing div -->
+                <!-- outside containing div -->
 
 
             </div>
