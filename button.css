@@ -41,8 +41,9 @@
     /* card colors */
     --card-bg:#e6e6e6;
     --card-shadow: #521717;
-
-
+    /* prod badge color */
+    --prod-bg: #f34242;
+    --prod-txt:#eff0e9;
 }
 
 body {
@@ -557,12 +558,14 @@ padding: 1.6rem;
 }
 .card-txt{
     padding: 0rem 10rem;
-    4rem;
+    /* 4rem; */
     width: 90%;
     align-self: center;
+    position: relative;
 }
 .img-card{
     align-self: flex-start;
+    position: relative;
     width: 35%;
     border:2px solid var(--fab-color-two);
     padding: 0.8rem 0.8rem;
@@ -647,4 +650,75 @@ padding: 1.6rem;
     width: 1rem;
     align-self: center;
     margin: 0rem 0.2rem;
+}
+.prod-badge{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    background-color: var(--prod-bg);
+    color: var(--prod-txt);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0rem 0.2rem;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 30%;
+    border: 1px solid var(--accent-color);
+}
+.close-btn:hover{
+    color: var(--white);
+    background-color: var(--fill-medium);
+}
+
+.horizontal-card{
+
+    /* align-self: flex-start; */
+    /* position: relative; */
+    width: 130%;
+    border:2px solid var(--fab-color-two);
+    padding: 0.8rem 0.8rem;
+    background-color: var(--card-bg);
+    display: flex;
+    box-shadow: 1px 1px 10px var(--card-shadow);
+}
+.horizontal-card-img{
+    /* padding: 0rem 10em; */
+    align-self: center;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+}
+.data{
+    padding: 0rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.data-btn{
+    width: 30%;
+    align-self: center;
+    background-color: var(--btn-color);
+    color: var(--white);
+
+
+
+    font-size: 1rem;
+    border: none;
+    padding: 0.4rem 1rem;
+}
+.data-btn:hover {
+    cursor: pointer;
+    background-color: var(--btn-color-normal);
+    box-shadow: 1px 1px 4px var(--btn-color-normal-hover);
+}
+.data-heading{
+    align-self: center;
 }
