@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./assets/faviconSprinkle.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./button.css" />
+
+    <title>SprinkleUI</title>
+
+    <!-- for syntax highlighting -->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/atom-one-dark.min.css" />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</head>
+
+<body>
+    <div class="doc">
+        <div class="header">
+            <div class="left">
+                <img class="logo" src="./assets/sprinkleLogo.png" alt="logo of SprinkleUI" />
+                <p class="tagline">
+                    <span class="bolden">SprinkleUI </span>
+                </p>
+            </div>
+            <div class="right">
+                <a class="link" href="./Home.html">Home</a>
+                <a class="link" href="./Home.html">Docs</a>
+                <a class="link" href="./Home.html">Github</a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <a class="listItem" href="./avatar.html">Getting Started( link to docs)</a>
+            <a class="listItem" href="./avatar.html">Avatar</a>
+            <a class="listItem" href="./button.html">Buttons</a>
+        </div>
+        <div class="main">
+            <div class="contents">
+                <h1 style="color:red">MOve alert, badges to top and delete this h1</h1>
+
+                <h1>Avatars</h1>
+                <p class="tagline">
+                    Avatars are found throughout different designs and can be used just
+                    about anywhere, from tables to dialog menus, from user info to
+                    status menu and so much more!
+                </p>
+                <div class="item-container">
+                    <h3>Image Avatars</h3>
+                    <p class="tagline">
+                        Image avatars can be very useful in displaying user information, a
+                        list of friends etc. Since they're in such wide use already,
+                        finding them isn't that difficult a task.
+                    </p>
+                    <div class="items">
+                        <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-regular" />
+                        <img class="avatar-rg" src="./assets/avatar-2.svg" alt="avatar-logo-regular" />
+                        <img class="avatar-rg" src="./assets/avatar-3.svg" alt="avatar-logo-regular" />
+                    </div>
+
+                    <pre> <code class="html">
+      &lt!-- HTML code: -->
+      
+      &ltdiv class="items">
+          &ltimg
+              class="avatar-rg"
+              src="./assets/avatarLogo.svg"
+              alt="avatar-logo-small"
+          />
+          &ltimg
+              class="avatar-rg"
+              src="./assets/avatar-2.svg"
+              alt="avatar-logo-small"
+          />
+          &ltimg
+              class="avatar-rg"
+              src="./assets/avatar-3.svg"
+              alt="avatar-logo-small"
+          />
+          &lt/div>
+      </code></pre>
+                    <pre> <code class="css">
+      /* CSS code: */
+      
+      .items {
+      padding: 0rem 0rem;
+      display: flex;
+      /* justify-content: space-around; */
+      }
+      .avatar-rg {
+      width: 3rem;
+      height: 3rem;
+      padding: 0rem 1rem;
+      }
+      
+      </code></pre>
+                    <hr>
+                </div>
+                <div class="item-container">
+                    <h3>Avatar sizes</h3>
+                    <p class="tagline">
+                        Depending on the need or the design brief given, one may require
+                        avatars to be of a variety of sizes. Following are avatars in
+                        small, regular and large sizes respectively:
+                    </p>
+                    <div class="items">
+                        <img class="avatar-sm" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                        <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-log-regular" />
+                        <img class="avatar-lg" src="./assets/avatarLogo.svg" alt="avatar-logo-large" />
+                    </div>
+                    <pre> <code class="html">
+      &lt!-- HTML code: -->
+      
+      &ltdiv class="items">
+      
+          &ltimg class="avatar-sm" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      
+          &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-log-regular" />
+          
+          &ltimg class="avatar-lg" src="./assets/avatarLogo.svg" alt="avatar-logo-large" />
+      
+      &lt/div>
+      </code></pre>
+                    <pre> <code class="css">
+          /* CSS code: */
+          
+          .items {
+          padding: 0rem 0rem;
+          display: flex;
+          /* justify-content: space-around; */
+          
+          .avatar-rg {
+              width: 3rem;
+              height: 3rem;
+              padding: 0rem 1rem;
+          }
+          
+          .avatar-sm {
+              width: 2rem;
+              height: 2rem;
+          
+              padding: 0rem 1rem;
+          }
+          
+          .avatar-lg {
+              width: 4rem;
+              height: 4rem;
+          
+              padding: 0rem 1rem;
+          }
+                              
+         </code></pre>
+                    <hr>
+
+                </div>
+                <div class="item-container">
+                    <h3>Avatar status</h3>
+                    <p class="tagline">
+                        Avatars with status badges can be used to denote a variety of
+                        things from busy to available, from offline to favourite etc can
+                        all be done using status badges. Following are some examples:
+                    </p>
+                    <div class="items">
+                        <div class="status">
+                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                            <img class="status-dot" src="./assets/red-dot.png" alt="" />
+                        </div>
+                        <div class="status">
+                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                            <img class="status-dot" src="./assets/green-dot.png" alt="" />
+                        </div>
+                        <div class="status">
+                            <img class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+                            <img class="status-dot" src="./assets/orange-circle-96.png" alt="" />
+                        </div>
+                    </div>
+                    <pre> <code class="html">
+      &lt!-- HTML code: -->
+      
+      &ltdiv class="items">
+      
+      &ltdiv class="status">
+      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      &ltimg class="status-dot" src="./assets/red-dot.png" alt="" />
+      &lt/div>
+      
+      &ltdiv class="status">
+      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      &ltimg class="status-dot" src="./assets/green-dot.png" alt="" />
+      &lt/div>
+      
+      &ltdiv class="status">
+      &ltimg class="avatar-rg" src="./assets/avatarLogo.svg" alt="avatar-logo-small" />
+      &ltimg class="status-dot" src="./assets/orange-circle-96.png" alt="" />
+      &lt/div>
+      
+      &lt/div>
+      </code></pre>
+                    <pre> <code class="css">
+          /* CSS code: */
+          
+          .items {
+          padding: 0rem 0rem;
+          display: flex;
+          /* justify-content: space-around; */
+          
+          .status {
+              position: relative;
+          }
+          
+          .status-dot {
+              height: 1rem;
+              width: 1rem;
+              position: absolute;
+              bottom: 0.3rem;
+              right: 1rem;
+              border-radius: 50%;
+              border: 3px solid white;
+          }
+          .avatar-rg {
+              width: 3rem;
+              height: 3rem;
+              padding: 0rem 1rem;
+          }
+                              
+                
+ </code></pre>
+                    <hr>
+
+                </div>
+
+            </div>
+            <div class="contents">
+                <h1>Buttons</h1>
+                <p class="tagline">
+                    Butons allow users to take action and make choices with a click or a tap! Buttons communicate
+                    actions
+                    that users can take. They are typically placed throughout your UI, in places like:
+                    <ul>
+                        <li>Modal Windows</li>
+                        <li>Forms</li>
+                        <li>Cards</li>
+                        <li>Toolbar</li>
+                    </ul>
+                </p>
+                <div class="item-container">
+                    <h3>Basic Buttons</h3>
+                    <p class="tagline">
+                        Following are the three variants of the basic buttons:
+                    </p>
+                    <div class="items">
+                        <button class="btn-basic-one">Text </button>
+                        <button disabled="true" class="btn-basic-four">disabled </button>
+                        <button class="btn-basic-two">Contained </button>
+                        <button class="btn-basic-three">Outlined </button>
+
+                    </div>
+
+                    <pre> <code class="html">
+&lt!-- HTML code: -->
+
+&ltdiv class="items">
+
+    &ltbutton class="btn-basic-one">Text &lt/button>
+    &ltbutton disabled="true" class="btn-basic-four">disabled &lt/button>
+    &ltbutton class="btn-basic-two">Contained &lt/button>
+    &ltbutton class="btn-basic-three">Outlined &lt/button>
+
+&lt/div>
+</code></pre>
+                    <pre> <code class="css">
+/* CSS code: */
+
+    .btn-basic-one {
+        background: none;
+        border: none;
+        font-size: 1.4rem;
+        padding: 0.4rem 1rem;
+    
+    }
+    
+    .btn-basic-one:hover {
+        background-color: var(--btn-hover);
+        cursor: pointer;
+    }
+    .btn-basic-two{
+        background-color: var(--btn-color);
+        color: var(--white);
+        font-size: 1.4rem;
+        border: none;
+        padding: 0.4rem 1rem;
+    
+    }
+    
+    .btn-basic-two:hover{
+        cursor: pointer;
+        background-color: var(--btn-color-normal);
+        box-shadow: 1px 1px 4px var(--btn-color-normal-hover);
+    }
+    
+    .btn-basic-three{
+        padding: 0.4rem 1rem;
+        background: none;
+        border: 1px solid var(--btn-color-normal);
+        font-size: 1.4rem;
+        color:var(--btn-color-normal);
+    }
+    .btn-basic-three:hover{
+        cursor: pointer;
+        background-color: var(--fill-dark-hover);
+    }
+    .btn-basic-four{
+        padding: 0.4rem 1rem;
+    
+        font-size: 1.4rem;
+    }
+    .btn-basic-four:hover{
+        cursor: pointer;
+    }
+    </code></pre>
+                    <hr>
+
+                </div>
+
+                <div class="item-container">
+                    <h3>Coloured Buttons</h3>
+                    <p class="tagline">
+                        Following are some variants of the coloured buttons:
+                    </p>
+                    <div class="items">
+
+                        <button class="btn-primary">Primary </button>
+                        <button class="btn-secondary">Secondary </button>
+                        <button class="btn-error">Error </button>
+                        <button class="btn-success">Success </button>
+
+                    </div>
+                    <pre> <code class="html">
+&lt!-- HTML code: -->
+
+&ltdiv class="items">
+
+    &ltbutton class="btn-primary">Primary &lt/button>
+    &ltbutton class="btn-secondary">Secondary &lt/button>
+    &ltbutton class="btn-error">Error &lt/button>
+    &ltbutton class="btn-success">Success &lt/button>
+
+&lt/div>
+                        </code></pre>
+                    <pre> <code class="css">
+ /* CSS code: */
+
+    .btn-primary{
+        background-color: inherit;
+        color: var(--btn-primary);
+        border: 1px solid var(--btn-primary);
+        font-size: 1.4rem;
+        padding: 0.4rem 1rem;
+    }
+    .btn-primary:hover{
+        cursor: pointer;
+        color: var(--btn-primary-hover);
+        background-color: var(--btn-primary-hover-fill);
+        border: 1px solid var(--btn-primary-hover);
+    }
+    .btn-secondary{
+        background-color: inherit;
+        color: var(--btn-sec-hover);
+        border: 1px solid var(--btn-sec-hover);
+        font-size: 1.4rem;
+        padding: 0.4rem 1rem;
+    }
+    .btn-secondary:hover{
+        cursor: pointer;
+        color: var(--btn-primary-hover);
+        background-color: var(--btn-primary-hover-fill);
+        border: 1px solid var(--btn-primary-hover);
+    }
+    .btn-error{
+        background-color: inherit;
+        color: var(--btn-error);
+        border: 1px solid var(--btn-error);
+        font-size: 1.4rem;
+        padding: 0.4rem 1rem;
+    
+    }
+    .btn-error:hover{
+        cursor: pointer;
+        background-color: var(--white);
+    }
+    .btn-success{
+        background-color: inherit;
+        color: var(--btn-success);
+        border: 1px solid var(--btn-success);
+        font-size: 1.4rem;
+        padding: 0.4rem 1rem;
+        font-size: 1.4rem;
+    }
+    .btn-success:hover{
+        cursor: pointer;
+        background-color: var(--white);
+    }
+
+
+</code></pre>
+                    <hr>
+
+
+                </div>
+                <div class="item-container">
+                    <h3>Differently sized Buttons</h3>
+                    <p class="tagline">
+                        Following are the three variants of buttons with varying sizes:
+                    </p>
+                    <div class="items">
+                        <button class="btn-size1">Small </button>
+
+                        <button class="btn-size2">Medium </button>
+
+                        <button class="btn-size3">Large </button>
+                    </div>
+
+                </div>
+
+                <pre> <code class="html">
+    &lt!-- HTML code: -->
+    
+    &ltdiv class="items">
+    &ltbutton class="btn-size1">Small &lt/button>
+    &ltbutton class="btn-size2">Medium &lt/button>
+    &ltbutton class="btn-size3">Large &lt/button>
+    
+    &lt/div>
+    </code></pre>
+                <pre> <code class="css">
+/* CSS code: */
+    
+    .btn-size1{
+        background-color: inherit;
+        width: 3rem;
+        /* align-items:center; */
+        height: 1.2rem;
+        color:var(--btn-primary);
+        border: 1px solid var(--btn-primary);
+    
+    }
+    .btn-size2{
+        background-color: inherit;
+        font-size: 1.1rem;
+        width: 4.6rem;
+        height: 1.6rem;
+        border:1px solid var(--btn-primary);
+        color:var(--btn-primary);
+    }
+    .btn-size3{
+        background-color: inherit;
+        font-size: 1.6rem;
+        width: 5.6rem;
+        height: 2.8rem;
+        border: 1px solid var(--btn-primary);
+        color:var(--btn-primary);
+    }
+    </code></pre>
+                <hr>
+
+            </div>
+            <div class="contents">
+                <h1>Floating Action Button (FAB)</h1>
+                <p class="tagline">
+                    A floating action button (FAB) performs the primary, or most common, action on a screen. A floating
+                    action button appears in front of all screen content, typically as a circular shape with an icon in
+                    its center. FABs come in two types: regular, and extended.
+                </p>
+                <p class="tagline">
+
+                    Only use a FAB if it is the most suitable way to present a screen's primary action. Only one
+                    component is recommended per screen to represent the most common action.
+                </p>
+                <div class="item-container">
+                    <h3>Basic FAB</h3>
+                    <p class="tagline">
+                        Following are the three variants of the floating action buttons:
+                    </p>
+                    <div class="items">
+                        <button class="fab-one">+</button>
+                        <button class="fab-two"><img src="./assets/icons8-edit.svg"></button>
+                        <button class="fab-three"><img src="./assets/icons8-scroll-down-24.png">Download</button>
+                    </div>
+                    <pre> <code class="html">
+&lt!-- HTML code: -->
+
+&ltdiv class="items">
+
+&ltbutton class="fab-one">+&lt/button>
+&ltbutton class="fab-two">&ltimg src="./assets/icons8-edit.svg">&lt/button>
+&ltbutton class="fab-three">&ltimg src="./assets/icons8-scroll-down-24.png">Download&lt/button>
+
+&lt/div>
+               
+</code></pre>
+                    <pre> <code class="css">
+/* CSS code: */
+    
+    .fab-one{
+        background-color: var(--fab-color-two);
+        color: white;
+        border: none;
+    
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 2rem;
+        border-radius: 50%;
+    
+        box-shadow:  0px 2px 0.4rem 0.1rem var(--fab-color-shadow);  
+    }
+    .fab-one:hover{
+        background-color: var(--fab-color-two-hover);
+    }
+    .fab-two{
+        background-color: var(--fab-color);
+        
+        border: none;
+    
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+    
+        box-shadow:  0px 0px 0.4rem 0.1rem var(--fab-color-shadow);  
+    }
+    .fab-two:hover{
+        background-color: var(--fab-color-hover);
+    }
+    .fab-three{
+        background-color: var(--fab-color);
+        color: white;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        border: none;
+    
+        font-size: 1rem;
+        width: 7.8rem;
+        height: 2.6rem;
+        border-radius: 20px;
+    
+        box-shadow:  0px 0px 0.4rem 0.1rem var(--fab-color-shadow);  
+    }
+    .fab-three:hover{
+        background-color: var(--fab-color-hover);
+    
+    }
+                   
+    </code></pre>
+                    <hr>
+                </div>
+
+                <div class="item-container">
+                    <h3>Size variants:</h3>
+                    <p class="tagline">
+                        Dependng on the use case, we can have FABs of different sizes to suit various use cases. Here
+                        are three variants of the floating action button of different sizes.
+                    </p>
+                    <div class="items">
+                        <button class="fab-one">+</button>
+                        <button class="fab-plus-one">+</button>
+                        <button class="fab-plus-two">+</button>
+                    </div>
+
+                    <pre> <code class="html">
+&lt!-- HTML code: -->
+
+    &ltdiv class="items">
+    &ltbutton class="fab-one">+&lt/button>
+    &ltbutton class="fab-plus-one">+&lt/button>
+    &ltbutton class="fab-plus-two">+&lt/button>
+
+    &lt/div>
+                       
+        </code></pre>
+                    <pre> <code class="css">
+/* CSS code: */            
+
+    .fab-one {
+        background-color: var(--fab-color-two);
+        color: var(--white);
+        border: none;
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        box-shadow: 0px 2px 0.4rem 0.1rem var(--fab-color-shadow);
+    }
+
+    .fab-one:hover {
+        background-color: var(--fab-color-two-hover);
+    }
+
+    .fab-plus-one {
+        background-color: var(--fab-color-two);
+        color: var(--white);
+        border: none;
+        width: 4.2rem;
+        height: 4.2rem;
+        font-size: 4rem;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        border-radius: 50%;
+        box-shadow: 0px 2px 0.4rem 0.1rem var(--fab-color-shadow);
+    }
+    .fab-plus-one:hover{
+        background-color: var(--fab-color-two-hover);
+    }
+
+    .fab-plus-two {
+        background-color: var(--fab-color-two);
+        color: var(--white);
+        border: none;
+        width: 5.6rem;
+        height: 5.6rem;
+        font-size: 6rem;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        border-radius: 50%;
+        box-shadow: 0px 2px 0.4rem 0.1rem var(--fab-color-shadow);
+    }
+    
+    .fab-plus-two:hover {
+        background-color: var(--fab-color-two-hover);
+    }
+
+                    </code></pre>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- testing -->
+
+                <!-- testn -->
+
+                <!-- <footer></footer> -->
+            </div>
+
+            <!-- Alert component -->
+
+            <div class="contents">
+                <h1>Alert</h1>
+                <p class="tagline">
+                    An alert displays a short, important message in a way that attracts the user's attention without
+                    interrupting the user's task.
+                </p>
+
+                <div class="item-container">
+
+
+                    <div class="alert-items">
+                        <span class="alert-individual-error"><img class="alert-img" src="./assets/alert-error.png"
+                                alt=""> This is an error alert - check it out!</span>
+                        <span class="alert-individual-warning"><img class="alert-img" src="./assets/alert-warning.png"
+                                alt=""> This is a warning alert - check it out!</span>
+                        <span class="alert-individual-info"><img class="alert-img" src="./assets/alert-info.png" alt="">
+                            This is an info alert - check it out!</span>
+                        <span class="alert-individual-success"><img class="alert-img" src="./assets/alert-success.png"
+                                alt=""> This is a success alert - check it out!</span>
+
+                    </div>
+                    <pre> <code class="html">
+&lt!-- HTML code: -->
+
+&ltdiv class="alert-items">
+
+        &ltspan class="alert-individual-error">&ltimg class="alert-img" 
+                src="./assets/alert-error.png" 
+                alt="error icon"> 
+                This is an error alert - check it out!
+        &lt/span>
+        
+        &ltspan class="alert-individual-warning">&ltimg class="alert-img"
+                src="./assets/alert-warning.png" 
+                alt="warning icon"> 
+                This is an warning alert - check it out!
+        &lt/span>
+
+        &ltspan class="alert-individual-info">&ltimg class="alert-img" 
+                src="./assets/alert-info.png"
+                alt="info icon"> 
+                This is an warning alert - check it out!
+        &lt/span>
+
+        &ltspan class="alert-individual-success">&ltimg class="alert-img" 
+                src="./assets/alert-success.png"
+                alt="success icon"> 
+                This is an success alert - check it out!
+        &lt/span>
+
+&lt/div>
+</code></pre>
+                    <pre> <code class="css">
+/* CSS code: */
+
+    .alert-items{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .alert-individual-error{
+        background-color: var(--alert-error-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-error);
+    }
+    .alert-img{
+        height: 1rem;
+        width: 1rem;
+        margin: 1rem ;
+    }
+    .alert-individual-warning{
+        background-color: var(--alert-warning-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-warning);
+    }
+    .alert-individual-info{
+        background-color: var(--alert-info-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-info);
+    }
+    .alert-individual-success{
+        background-color: var(--alert-success-fill);
+        margin: 0.6rem 0rem;
+        width: 80%;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--alert-success);
+    }
+               
+</code></pre>
+                    <hr>
+                </div>
+                <!-- testing -->
+
+                <!-- testn -->
+
+                <!-- <footer></footer> -->
+            </div>
+
+
+            <!-- Badge component -->
+
+
+            <div class="contents">
+                <h1>Badges</h1>
+                <p class="tagline">
+                    Badge generates a small badge to the top-right of its child(ren).
+                    Use the Badge Component Symbol to draw attention to another interface element or to display a
+                    notification.
+                </p>
+                <p class="tagline">
+
+                    It enhances the component to which it is attached with additional information, disclosed to the user
+                    upon interacting with it.
+                </p>
+
+                <div class="item-container">
+
+                    <div class="badge-items">
+                        <span class="badge-parent"><img class="badge-img" src="./assets/shopping-cart.png" alt=""><span
+                                class="num">19</span></span>
+                        <span class="badge-parent"><img class="badge-img" src="./assets/envelope.png" alt=""><span
+                                class="num">9</span></span>
+                        <span class="badge-parent"><span class="txt-badge-primary">Primary</span></span>
+                        <span class="badge-parent"><span class="txt-badge-secondary">Secondary</span></span>
+
+                    </div>
+                    <pre> <code class="html">
+        &lt!-- HTML code: -->
+        
+    &ltdiv class="contents">
+
+    &ltdiv class="item-container">
+
+    &ltdiv class="badge-items">
+    
+    &ltspan class="badge-parent">
+
+        &ltimg class="badge-img" src="./assets/shopping-cart.png" alt="">
+        &ltspan class="num">19&lt/span>&lt/span>
+
+    &ltspan class="badge-parent">
+        &ltimg class="badge-img" src="./assets/envelope.png" alt="">
+        &ltspan class="num">9&lt/span>&lt/span>
+
+    &ltspan class="badge-parent">
+        &ltspan class="txt-badge-primary">Primary&lt/span>&lt/span>
+
+    &ltspan class="badge-parent">&ltspan class="txt-badge-secondary">Secondary&lt/span>&lt/span>
+
+            &lt/div>
+        &lt/div>
+    &lt/div>
+       
+        </code></pre>
+                    <pre> <code class="css">
+        /* CSS code: */
+        
+
+.badge-items{
+    display: flex;
+    justify-content: space-around;
+
+    border: 1px solid var(--line-color);
+    padding: 1.6rem;
+}
+.badge-img{
+    height: 2rem;
+    width: 2rem;
+    /* margin: 1rem ; */
+}
+.badge-parent{
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+}
+.num{
+    background-color: var(--fab-color-two);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    top: 0rem;
+    right: 0rem;
+    border-radius: 50px;
+}
+.txt-badge-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkcyan;
+    margin: 0.5rem 0rem;
+    padding: 0.1rem 0.6rem;
+    border-radius: 20px;
+    color: var(--white);
+}
+.txt-badge-secondary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 119, 119);
+    margin: 0.5rem 0rem;
+    padding: 0.1rem 0.6rem;
+    border-radius: 10px;
+    color: var(--white);
+}
+           
+                       
+        </code></pre>
+                    <hr>
+                </div>
+                <!-- testing -->
+
+                <!-- testn -->
+
+                <!-- <footer></footer> -->
+            </div>
+
+
+            <!-- Card Component -->
+
+            <div class="contents">
+                <h1>Cards</h1>
+                <p class="tagline">
+                    Cards contain content and actions about a single subject.
+                    Cards are surfaces that display content and actions on a single topic.
+
+
+                </p>
+                <p class="tagline">
+
+                    They should be easy to scan for relevant and actionable information. Elements, like text and images,
+                    should be placed on them in a way that clearly indicates hierarchy.
+                </p>
+                <div class="item-container">
+                    <h3>Text Card</h3>
+
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sed veritatis eum a, similique
+                            architecto quis reiciendis deleniti nesciunt doloremque iusto delectus assumenda dolor
+                            repellat accusantium eaque consequuntur necessitatibus sequi?
+                        </p>
+                        <p>
+                            Porro voluptatibus similique modi ea cupiditate distinctio a sint consequatur aspernatur
+                            eligendi impedit consequuntur eos, expedita atque veritatis aliquid quisquam saepe delectus
+                            veniam nam maiores ipsum? Architecto id ex vel.</p>
+                        <p>
+                            Ipsum facilis vitae voluptas vero optio dolor. Dicta soluta explicabo eaque, optio animi
+                            non, maxime nihil iusto obcaecati accusantium quia, inventore itaque fugiat magnam possimus?
+                            Quis magni deleniti, ea commodi esse eligendi quod, iste non quaerat voluptatum maxime rem
+                            quas corrupti eius voluptates.</p>
+                    </div>
+                    <pre> <code class="html">
+        &lt!-- HTML code: -->
+&ltdiv class="item-container">
+    &lth3>Text Card&lt/h3>
+
+    &ltdiv class="card">
+        &ltp>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. 
+        Magni sed veritatis eum a, similique
+        architecto quis reiciendis deleniti nesciunt 
+        doloremque iusto delectus assumenda dolor
+        repellat accusantium eaque consequuntur 
+        necessitatibus sequi?
+        &lt/p>
+        &ltp>
+        Porro voluptatibus similique modi ea 
+        cupiditate distinctio a sint consequatur 
+        aspernatur eligendi impedit consequuntur 
+        eos, expedita atque veritatis aliquid quisquam 
+        saepe delectus veniam nam maiores ipsum? 
+        Architecto id ex vel.&lt/p>
+        &ltp>
+        Ipsum facilis vitae voluptas vero optio dolor. 
+        Dicta soluta explicabo eaque, optio animi
+        non, maxime nihil iusto obcaecati 
+        accusantium quia, inventore itaque 
+        fugiat magnam possimus?
+        Quis magni deleniti, ea commodi esse 
+        eligendi quod, iste non quaerat 
+        voluptatum maxime rem
+        quas corrupti eius voluptates.&lt/p>
+    &lt/div>
+        </code></pre>
+                    <pre> <code class="css">
+/* CSS code: */
+    .item-container {
+        margin: 5rem 0rem;
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .card{
+        border:2px solid var(--fab-color-two);
+        padding: 0.8rem;
+        background-color: var(--card-bg);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 1px 10px var(--fab-color-shadow);
+    }        
+        </code></pre>
+                    <hr>
+
+                </div>
+
+
+                <!-- image card -->
+                <div class="item-container">
+                    <h3>Basic Image Card</h3>
+
+                    <div class="img-card">
+                        <img class="card-img" src="./assets/Nainital.jpg" alt="">
+                        <p class="card-txt">
+                            <h2 class="img-card-heading">Nainital</h2>Set amidst the towering peaks of the Kumaon Hills,
+                            the lake resort of Nainital has a lot to offer. From boating to feeding animals at the zoo;
+                            from picnicking on the hills to exploring Jim Corbett's home, Nainital has all that you
+                            could hope for in a hill station.
+                        </p>
+                        <button class="card-btn">Read more</button>
+                    </div>
+                    <pre> <code class="html">
+    &lt!-- HTML code: -->
+    
+    &ltdiv class="item-container">
+        &lth3>Basic Image Card&lt/h3>
+
+        &ltdiv class="img-card">
+            &ltimg class="card-img" src="./assets/Nainital.jpg" alt="">
+            &ltp class="card-txt">
+                &lth2 class="img-card-heading">Nainital&lt/h2>
+                Set amidst the towering peaks 
+                of the Kumaon Hills, the lake 
+                resort of Nainital has a lot 
+                to offer. From boating to feeding 
+                animals at the zoo;
+                from picnicking on the hills to 
+                exploring Jim Corbett's home, 
+                Nainital has all that you
+                could hope for in a hill station.
+            &lt/p>
+            &ltbutton class="card-btn">Read more&lt/button>
+        &lt/div>
+   
+    </code></pre>
+                    <pre> <code class="css">
+    /* CSS code: */
+    
+    .item-container {
+        margin: 5rem 0rem;
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .card-img{
+        padding: 0rem 10em;
+        align-self: center;
+        border-radius: 10px;
+        /* object-fit: contain; */
+        width: 100%;
+        height: auto;
+        /* margin: 0rem 1rem; */
+    }
+    .card-txt{
+        padding: 0rem 10rem;
+        4rem;
+        width: 90%;
+        align-self: center;
+    }
+    .img-card{
+        align-self: flex-start;
+        width: 35%;
+        border:2px solid var(--fab-color-two);
+        padding: 0.8rem 0.8rem;
+        background-color: var(--card-bg);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 1px 10px var(--fab-color-shadow);
+    }
+    .img-card-heading{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .card-btn{
+        background-color: inherit;
+        color: var(--fab-color-two);
+        border: 1px solid var(--fab-color-two);
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .card-btn:hover{
+        cursor: pointer;
+        color: var(--btn-primary-hover);
+        background-color: var(--btn-primary-hover-fill);
+        border: 1px solid var(--btn-primary-hover);
+    }
+
+       
+                   
+    </code></pre>
+                    <hr>
+                </div>
+
+
+                    <div class="item-container">
+                        <h3>Product Info Card</h3>
+
+                        <div class="img-card">
+                            <img class="card-img" src="./assets/prod-1.jpeg" alt="">
+                            <p class="card-txt">
+                                <h2 class="img-card-heading">Bomber Jacket</h2>choco coloured bomber jacket
+                            </p>
+                            <h2 class="item-price">₹2345 /- <span class="fake-discount">₹4567 </span><span
+                                    class="fake-discount-percent">(48% OFF)</span></h2>
+
+                            <span class="tax-info">Inclusive of all taxes.</span>
+                            <div class="btn-container">
+                            <button class="buy-btn-sec"> <img class="icon" src="./assets/icons8-shopping-cart-100.png" alt="">Add to bag</button>
+                            <button class="buy-btn">Wishlist</button>
+                        </div>
+                        </div>
+
+                        <pre> <code class="html">
+&lt!-- HTML code: -->
+                            
+    &ltdiv class="item-container">
+        &lth3>Product Info Card&lt/h3>
+
+        &ltdiv class="img-card">
+            &ltimg class="card-img" src="./assets/prod-1.jpeg" alt="">
+            &ltp class="card-txt">
+                &lth2 class="img-card-heading">Bomber Jacket&lt/h2>
+                    choco coloured bomber jacket
+            &lt/p>
+            &lth2 class="item-price">₹2345 /- 
+                &ltspan class="fake-discount">
+                    ₹4567 &lt/span>
+                &ltspan class="fake-discount-percent">
+                (48% OFF)&lt/span>&lt/h2>
+
+            &ltspan class="tax-info">Inclusive of all taxes.&lt/span>
+            &ltdiv class="btn-container">
+            &ltbutton class="buy-btn-sec"> 
+                &ltimg class="icon" src="./assets/icons8-shopping-cart-100.png" alt="">
+                    Add to bag&lt/button>
+            &ltbutton class="buy-btn">Wishlist&lt/button>
+        &lt/div>
+        &lt/div>
+                           
+                           
+                            </code></pre>
+                            
+                                            <hr>
+
+                    </div>
+
+
+                    <!-- outside containing div -->
+
+
+            </div>
+
+</body>
+
+</html>
