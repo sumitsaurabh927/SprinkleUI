@@ -758,14 +758,14 @@ body {
 }
 
 .img-individual{
-    width: 80%;
+    width: 100%;
 }
 /* .format{
     max-width: 400px;
 } */
 
 .circle-img{
-    /* width: 100%;
-    height: 100%; */
-    border-radius: 50px;
+    /* width: 500px;
+    height: 500px; */
+    border-radius: 50%;
 }
