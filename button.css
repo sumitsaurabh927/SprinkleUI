@@ -800,5 +800,4 @@ body {
 .input:required:focus:invalid {
     /* background-color: red; */
     background-color: var(--input-wrong);
-
 }
