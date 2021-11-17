@@ -1351,7 +1351,7 @@ color: var(--white);
 
                 <h1>Input with validation</h1>
                     <p class="tagline">
-                        Following is an input field that expects a number betwwen 10 and 15 and if the user enter some number that doesn't fall in specified range then it shows error by changing the background color to red and conversely for the correct inputs it changes the background color to green to signify that the input is along the expected lines.
+                        Following is an input field that expects a number betwwen 10 and 15 and if the user enter some number that doesn't fall in specified range then it shows error by changing the background color to red and conversely for the correct inputs it changes the background color to green to signify that the input is along the expected lines, as follows:
                         
                     </p>
                     <div class="flex">
@@ -1364,12 +1364,13 @@ color: var(--white);
                 <pre> <code class="html">
     &lt!-- HTML code: -->
                                 
-    
     &ltdiv class="flex">
-        &ltinput type="text" placeholder="Enter some text" /> 
-        &ltinput type="number" placeholder="Enter a number" /> 
-                
-    &lt/div>                    
+                                       
+        &ltinput class="input" type="number" placeholder="Enter a number between 10 and 15" 
+        min="10" max="15"  required/> 
+              
+    &lt/div>
+                     
                                                 
                                                 </code></pre>
              
