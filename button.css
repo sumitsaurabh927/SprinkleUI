@@ -711,7 +711,7 @@ body {
 
     /* align-self: flex-start; */
     /* position: relative; */
-    width: 130%;
+    width: 95%;
     border: 2px solid var(--fab-color-two);
     padding: 0.8rem 0.8rem;
     background-color: var(--card-bg);
@@ -723,7 +723,7 @@ body {
     /* padding: 0rem 10em; */
     align-self: center;
     border-radius: 10px;
-    width: 50%;
+    width: 45%;
     height: auto;
 }
 
@@ -735,7 +735,7 @@ body {
 }
 
 .data-btn {
-    width: 30%;
+    width: 45%;
     align-self: center;
     background-color: var(--btn-color);
     color: var(--white);
@@ -755,4 +755,17 @@ body {
 
 .data-heading {
     align-self: center;
+}
+
+.img-individual{
+    width: 80%;
+}
+/* .format{
+    max-width: 400px;
+} */
+
+.circle-img{
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 50px;
 }
