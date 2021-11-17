@@ -776,3 +776,8 @@ body {
     opacity: 0.6;
     width: 100%;
 }
+.flex{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+}
