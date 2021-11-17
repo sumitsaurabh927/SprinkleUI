@@ -1267,7 +1267,7 @@ color: var(--white);
                     " alt="picture of a dog">
 
 
-<pre> <code class="html">
+                    <pre> <code class="html">
         &lt!-- HTML code: -->
                                     
         &ltdiv class="item-container">
@@ -1294,18 +1294,20 @@ color: var(--white);
 
 
             <!-- Textarea component -->
-<div class="contents">
+            <div class="contents">
 
 
-<h1>Text Area</h1>
-    <p class="tagline">
-        The 'textarea' HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
-        
-    </p>
-    <textarea class="txt" name="Enter some text" id="" cols="70" rows="8">Enter text here</textarea>       
-       
-<!-- code -->
-<pre> <code class="html">
+                <h1>Text Area</h1>
+                <p class="tagline">
+                    The 'textarea' HTML element represents a multi-line plain-text editing control, useful when you want
+                    to allow users to enter a sizeable amount of free-form text, for example a comment on a review or
+                    feedback form.
+
+                </p>
+                <textarea class="txt" name="Enter some text" id="" cols="70" rows="8">Enter text here</textarea>
+
+                <!-- code -->
+                <pre> <code class="html">
     &lt!-- HTML code: -->
                                 
     &lttextarea class="txt" name="Enter some text" id="" cols="70" rows="8">
@@ -1314,25 +1316,27 @@ color: var(--white);
                                 
                                 
                                 </code></pre>
-</div>
+            </div>
 
 
-<!-- Input component -->
-           <div class="contents">
+            <!-- Input component -->
+            <div class="contents">
 
 
-            <h1>Input</h1>
+                <h1>Input</h1>
                 <p class="tagline">
-                    The 'input' HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. It is of various types like text, number etc as shown:
-                    
+                    The 'input' HTML element is used to create interactive controls for web-based forms in order to
+                    accept data from the user; a wide variety of types of input data and control widgets are available,
+                    depending on the device and user agent. It is of various types like text, number etc as shown:
+
                 </p>
                 <div class="flex">
-                <input type="text" placeholder="Enter some text" /> 
-                <input type="number" placeholder="Enter a number" /> 
-                      
-            </div>
-      
-            <pre> <code class="html">
+                    <input type="text" placeholder="Enter some text" />
+                    <input type="number" placeholder="Enter a number" />
+
+                </div>
+
+                <pre> <code class="html">
 &lt!-- HTML code: -->
                             
 
@@ -1343,24 +1347,27 @@ color: var(--white);
 &lt/div>                    
                                             
                                             </code></pre>
-         
+
             </div>
 
             <div class="contents">
 
 
                 <h1>Input with validation</h1>
-                    <p class="tagline">
-                        Following is an input field that expects a number betwwen 10 and 15 and if the user enter some number that doesn't fall in specified range then it shows error by changing the background color to red and conversely for the correct inputs it changes the background color to green to signify that the input is along the expected lines, as follows:
-                        
-                    </p>
-                    <div class="flex">
-                                       
-                    <input class="input" type="number" placeholder="Enter a number between 10 and 15" 
-                    min="10" max="15"  required/> 
-                          
+                <p class="tagline">
+                    Following is an input field that expects a number betwwen 10 and 15 and if the user enter some
+                    number that doesn't fall in specified range then it shows error by changing the background color to
+                    red and conversely for the correct inputs it changes the background color to green to signify that
+                    the input is along the expected lines, as follows:
+
+                </p>
+                <div class="flex">
+
+                    <input class="input" type="number" placeholder="Enter a number between 10 and 15" min="10" max="15"
+                        required />
+
                 </div>
-          
+
                 <pre> <code class="html">
     &lt!-- HTML code: -->
                                 
@@ -1373,9 +1380,89 @@ color: var(--white);
                      
                                                 
                                                 </code></pre>
-             
-                </div>
 
+            </div>
+            <!-- Radio button component -->
+            <div class="contents">
+
+
+                <h1>Radio Buttons</h1>
+                <p class="tagline">
+                    'input' elements of type radio are generally used in radio groups—collections of radio buttons
+                    describing a set of related options.
+
+                    Only one radio button in a given group can be selected at the same time. Radio buttons are typically
+                    rendered as small circles, which are filled or highlighted when selected.
+
+                </p>
+
+                <!-- Having the same name helps in multiselect -->
+                <input type="radio" id="chrome" name="browser">
+                <label for="chrome">Chrome</label>
+
+                <input type="radio" id="firefox" name="browser">
+                <label for="firefox">Firefox</label>
+
+                <input type="radio" id="Safari" name="browser">
+                <label for="safari">Safari</label>
+
+
+                <pre> <code class="html">
+&lt!-- HTML code: -->
+    &ltinput type="radio" id="chrome" name="browser">
+    &ltlabel for="chrome">Chrome&lt/label>
+
+    &ltinput type="radio" id="firefox" name="browser">
+    &ltlabel for="firefox">Firefox&lt/label>
+
+    &ltinput type="radio" id="Safari" name="browser">
+    &ltlabel for="safari">Safari&lt/label>                       
+
+&lt/div>                                    
+                                                    </code></pre>
+
+            </div>
+
+
+            <div class="contents">
+
+
+                <h1>Radio Buttons</h1>
+                <p class="tagline">
+                    'input' elements of type radio are generally used in radio groups—collections of radio buttons
+                    describing a set of related options.
+
+                    Only one radio button in a given group can be selected at the same time. Radio buttons are typically
+                    rendered as small circles, which are filled or highlighted when selected.
+
+                </p>
+
+                <!-- Having the same name helps in multiselect -->
+                <input type="checkbox" id="chrome" name="browser">
+                <label for="chrome-browser">Chrome</label>
+
+                <input type="checkbox" id="firefox" name="browser">
+                <label for="firefox-browser">Firefox</label>
+
+                <input type="checkbox" id="Safari" name="browser">
+                <label for="safari-browser">Safari</label>
+
+
+                <pre> <code class="html"><P></P>
+    &lt!-- HTML code: -->
+    &ltinput type="checkbox" id="chrome" name="browser">
+    &ltlabel for="chrome-browser">Chrome&lt/label>
+
+    &ltinput type="checkbox" id="firefox" name="browser">
+    &ltlabel for="firefox-browser">Firefox&lt/label>
+
+    &ltinput type="checkbox" id="Safari" name="browser">
+    &ltlabel for="safari-browser">Safari&lt/label>                      
+    
+    &lt/div>                                    
+                                                        </code></pre>
+
+            </div>
 
 
 </body>
