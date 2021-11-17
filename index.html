@@ -1304,12 +1304,16 @@ color: var(--white);
     </p>
     <textarea class="txt" name="Enter some text" id="" cols="70" rows="8">Enter text here</textarea>       
        
+<!-- code -->
 <pre> <code class="html">
-&lt!-- HTML code:
-
-
-&lt/div>
-</code></pre>
+    &lt!-- HTML code: -->
+                                
+    &lttextarea class="txt" name="Enter some text" id="" cols="70" rows="8">
+        Enter text here!
+    &lt/textarea>   
+                                
+                                
+                                </code></pre>
 </div>
 
 
@@ -1324,17 +1328,52 @@ color: var(--white);
                 </p>
                 <div class="flex">
                 <input type="text" placeholder="Enter some text" /> 
-                <input type="number" placeholder="Enter a number" />       
+                <input type="number" placeholder="Enter a number" /> 
+                      
             </div>
       
-                   
             <pre> <code class="html">
-            &lt!-- HTML code:
+&lt!-- HTML code: -->
+                            
+
+&ltdiv class="flex">
+    &ltinput type="text" placeholder="Enter some text" /> 
+    &ltinput type="number" placeholder="Enter a number" /> 
             
-            
-            &lt/div>
-            </code></pre>
+&lt/div>                    
+                                            
+                                            </code></pre>
+         
             </div>
+
+            <div class="contents">
+
+
+                <h1>Input with validation</h1>
+                    <p class="tagline">
+                        Following is an input field that expects a number betwwen 10 and 15 and if the user enter some number that doesn't fall in specified range then it shows error by changing the background color to red and conversely for the correct inputs it changes the background color to green to signify that the input is along the expected lines.
+                        
+                    </p>
+                    <div class="flex">
+                                       
+                    <input class="input" type="number" placeholder="Enter a number between 10 and 15" 
+                    min="10" max="15"  required/> 
+                          
+                </div>
+          
+                <pre> <code class="html">
+    &lt!-- HTML code: -->
+                                
+    
+    &ltdiv class="flex">
+        &ltinput type="text" placeholder="Enter some text" /> 
+        &ltinput type="number" placeholder="Enter a number" /> 
+                
+    &lt/div>                    
+                                                
+                                                </code></pre>
+             
+                </div>
 
 
 

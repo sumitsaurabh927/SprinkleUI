@@ -44,6 +44,10 @@
     /* prod badge color */
     --prod-bg: #f34242;
     --prod-txt: #eff0e9;
+
+    /* input color */
+    --input-right: #caf7cd;
+    --input-wrong: #fcc3c3;
 }
 
 body {
@@ -757,27 +761,44 @@ body {
     align-self: center;
 }
 
-.img-individual{
+.img-individual {
     width: 100%;
 }
+
 /* .format{
     max-width: 400px;
 } */
 
-.circle-img{
+.circle-img {
     /* width: 500px;
     height: 500px; */
     max-width: 50%;
     border-radius: 50%;
 }
 
-.txt{
+.txt {
     background-color: var(--card-bg);
     opacity: 0.6;
     width: 100%;
 }
-.flex{
+
+.flex {
     display: flex;
     /* flex-direction: column; */
     justify-content: space-around;
+}
+
+.input {
+    width: 50%;
+}
+
+.input:required:focus:valid {
+    /* background-color: blue; */
+    background-color: var(--input-right);
+}
+
+.input:required:focus:invalid {
+    /* background-color: red; */
+    background-color: var(--input-wrong);
+
 }
