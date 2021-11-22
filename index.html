@@ -1427,7 +1427,7 @@ color: var(--white);
             <div class="contents">
 
 
-                <h1>Radio Buttons</h1>
+                <h1>Checkbox</h1>
                 <p class="tagline">
                     'input' elements of type radio are generally used in radio groups—collections of radio buttons
                     describing a set of related options.
@@ -1436,16 +1436,24 @@ color: var(--white);
                     rendered as small circles, which are filled or highlighted when selected.
 
                 </p>
+                <div class="flex-col">
 
-                <!-- Having the same name helps in multiselect -->
-                <input type="checkbox" id="chrome" name="browser">
-                <label for="chrome-browser">Chrome</label>
+                    <!-- Having the same name helps in multiselect -->
+                    <div>
+                        <input type="checkbox" id="chrome" name="browser">
+                        <label for="chrome-browser">Chrome</label>
+                    </div>
+                    <div>
 
-                <input type="checkbox" id="firefox" name="browser">
-                <label for="firefox-browser">Firefox</label>
+                        <input type="checkbox" id="firefox" name="browser">
+                        <label for="firefox-browser">Firefox</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Safari" name="browser">
+                        <label for="safari-browser">Safari</label>
+                    </div>
 
-                <input type="checkbox" id="Safari" name="browser">
-                <label for="safari-browser">Safari</label>
+                </div>
 
 
                 <pre> <code class="html"><P></P>
@@ -1464,7 +1472,7 @@ color: var(--white);
 
             </div>
 
-<!--List (normal and stacked) remaning -->
+            <!--List (normal and stacked) remaning -->
 </body>
 
 </html>

@@ -801,3 +801,7 @@ body {
     /* background-color: red; */
     background-color: var(--input-wrong);
 }
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
