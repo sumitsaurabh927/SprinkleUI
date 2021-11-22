@@ -821,3 +821,16 @@ body {
     color: var(--fab-color-two-hover);
     background-color: var(--fill-dark-hover);
 }
+.list-item-left{
+    border: 1px solid var(--fab-color-two);
+    margin: 0.4rem;
+    padding: 0.8rem 0.6rem;
+    color: var(--fab-color-two); 
+
+    width: 50%;
+}
+.list-item-left:hover{
+    border: 1px solid var(--fab-color-two-hover);
+    color: var(--fab-color-two-hover);
+    background-color: var(--fill-dark-hover);
+}
