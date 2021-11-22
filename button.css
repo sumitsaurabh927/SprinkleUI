@@ -805,3 +805,19 @@ body {
     display: flex;
     flex-direction: column;
 }
+.flex-col-centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-item{
+    border: 1px solid var(--fab-color-two);
+    margin: 0.4rem;
+    padding: 0.8rem 6rem;
+    color: var(--fab-color-two);
+}
+.list-item:hover{
+    border: 1px solid var(--fab-color-two-hover);
+    color: var(--fab-color-two-hover);
+    background-color: var(--fill-dark-hover);
+}
