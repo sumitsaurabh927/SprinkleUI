@@ -865,3 +865,33 @@ body {
     background-color: var(--fab-color-hover);
     color: var(--white);
 }
+.nav-parent{
+    display: flex;
+    border: 1px solid black;
+    padding: 0.2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fill-light);
+}
+.left-nav{
+    display: flex;
+   
+}
+.right-nav{
+    display: flex;
+    list-style: none;
+}
+.nav-child{
+    margin: 0.6rem;
+}
+.nav-child:hover{
+    background-color: blueviolet;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+.link-none{
+    text-decoration: none;
+    color: black;
+}
