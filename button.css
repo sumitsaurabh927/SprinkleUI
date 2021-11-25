@@ -874,7 +874,7 @@ body {
     padding: 0.2rem;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--fill-light);
+    background-color: var(--input-right);
 }
 
 .left-nav {
@@ -892,7 +892,8 @@ body {
 }
 
 .nav-child:hover {
-    background-color: blueviolet;
+    background-color: var(--fill-dark-hover);
+    color: var(--white);
 }
 
 .icon {
