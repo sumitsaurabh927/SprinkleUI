@@ -665,7 +665,9 @@ body {
 
 .buy-btn-sec {
     width: 48%;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
     color: var(--white);
     border: 1px solid var(--fill-dark);
     background-color: var(--btn-error);
@@ -865,7 +867,8 @@ body {
     background-color: var(--fab-color-hover);
     color: var(--white);
 }
-.nav-parent{
+
+.nav-parent {
     display: flex;
     border: 1px solid black;
     padding: 0.2rem;
@@ -873,25 +876,31 @@ body {
     align-items: center;
     background-color: var(--fill-light);
 }
-.left-nav{
+
+.left-nav {
     display: flex;
-   
+
 }
-.right-nav{
+
+.right-nav {
     display: flex;
     list-style: none;
 }
-.nav-child{
+
+.nav-child {
     margin: 0.6rem;
 }
-.nav-child:hover{
+
+.nav-child:hover {
     background-color: blueviolet;
 }
-.icon{
+
+.icon {
     width: 2rem;
     height: 2rem;
 }
-.link-none{
+
+.link-none {
     text-decoration: none;
     color: black;
 }
